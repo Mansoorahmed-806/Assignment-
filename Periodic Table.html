@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Periodic Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 { margin-bottom: 20px; }
+    .periodic-table {
+      display: grid;
+      grid-template-columns: repeat(18, 60px);
+      grid-auto-rows: 60px;
+      gap: 4px;
+      justify-content: center;
+    }
+    .element {
+      border-radius: 6px;
+      padding: 2px;
+      font-size: 12px;
+      text-align: center;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .element span {
+      font-weight: bold;
+    }
+    /* Block colors */
+    .s { background: #ffb3b3; }   /* s-block */
+    .p { background: #ffff99; }   /* p-block */
+    .d { background: #99ccff; }   /* d-block */
+    .f { background: #b3ffb3; }   /* f-block */
+    .noble { border: 2px solid red; }
+  </style>
+</head>
+<body>
+  <h1>Periodic Table of Elements</h1>
+  <h2>Make by Mansoor Ahmed</h2>
+  <div class="periodic-table">
+    <!-- Period 1 -->
+    <div class="element s">1<br><span>H</span></div>
+    <div style="grid-column: 18;" class="element p noble">2<br><span>He</span></div>
+
+    <!-- Period 2 -->
+    <div class="element s">3<br><span>Li</span></div>
+    <div class="element s">4<br><span>Be</span></div>
+    <div style="grid-column: 13;" class="element p">5<br><span>B</span></div>
+    <div class="element p">6<br><span>C</span></div>
+    <div class="element p">7<br><span>N</span></div>
+    <div class="element p">8<br><span>O</span></div>
+    <div class="element p">9<br><span>F</span></div>
+    <div class="element p noble">10<br><span>Ne</span></div>
+
+    <!-- Period 3 -->
+    <div class="element s">11<br><span>Na</span></div>
+    <div class="element s">12<br><span>Mg</span></div>
+    <div style="grid-column: 13;" class="element p">13<br><span>Al</span></div>
+    <div class="element p">14<br><span>Si</span></div>
+    <div class="element p">15<br><span>P</span></div>
+    <div class="element p">16<br><span>S</span></div>
+    <div class="element p">17<br><span>Cl</span></div>
+    <div class="element p noble">18<br><span>Ar</span></div>
+
+    <!-- Period 4 -->
+    <div class="element s">19<br><span>K</span></div>
+    <div class="element s">20<br><span>Ca</span></div>
+    <div class="element d">21<br><span>Sc</span></div>
+    <div class="element d">22<br><span>Ti</span></div>
+    <div class="element d">23<br><span>V</span></div>
+    <div class="element d">24<br><span>Cr</span></div>
+    <div class="element d">25<br><span>Mn</span></div>
+    <div class="element d">26<br><span>Fe</span></div>
+    <div class="element d">27<br><span>Co</span></div>
+    <div class="element d">28<br><span>Ni</span></div>
+    <div class="element d">29<br><span>Cu</span></div>
+    <div class="element d">30<br><span>Zn</span></div>
+    <div class="element p">31<br><span>Ga</span></div>
+    <div class="element p">32<br><span>Ge</span></div>
+    <div class="element p">33<br><span>As</span></div>
+    <div class="element p">34<br><span>Se</span></div>
+    <div class="element p">35<br><span>Br</span></div>
+    <div class="element p noble">36<br><span>Kr</span></div>
+
+    <!-- Period 5 -->
+    <div class="element s">37<br><span>Rb</span></div>
+    <div class="element s">38<br><span>Sr</span></div>
+    <div class="element d">39<br><span>Y</span></div>
+    <div class="element d">40<br><span>Zr</span></div>
+    <div class="element d">41<br><span>Nb</span></div>
+    <div class="element d">42<br><span>Mo</span></div>
+    <div class="element d">43<br><span>Tc</span></div>
+    <div class="element d">44<br><span>Ru</span></div>
+    <div class="element d">45<br><span>Rh</span></div>
+    <div class="element d">46<br><span>Pd</span></div>
+    <div class="element d">47<br><span>Ag</span></div>
+    <div class="element d">48<br><span>Cd</span></div>
+    <div class="element p">49<br><span>In</span></div>
+    <div class="element p">50<br><span>Sn</span></div>
+    <div class="element p">51<br><span>Sb</span></div>
+    <div class="element p">52<br><span>Te</span></div>
+    <div class="element p">53<br><span>I</span></div>
+    <div class="element p noble">54<br><span>Xe</span></div>
+
+    <!-- Period 6 -->
+    <div class="element s">55<br><span>Cs</span></div>
+    <div class="element s">56<br><span>Ba</span></div>
+    <div class="element f">57-71<br><span>La-Lu</span></div>
+    <div class="element d">72<br><span>Hf</span></div>
+    <div class="element d">73<br><span>Ta</span></div>
+    <div class="element d">74<br><span>W</span></div>
+    <div class="element d">75<br><span>Re</span></div>
+    <div class="element d">76<br><span>Os</span></div>
+    <div class="element d">77<br><span>Ir</span></div>
+    <div class="element d">78<br><span>Pt</span></div>
+    <div class="element d">79<br><span>Au</span></div>
+    <div class="element d">80<br><span>Hg</span></div>
+    <div class="element p">81<br><span>Tl</span></div>
+    <div class="element p">82<br><span>Pb</span></div>
+    <div class="element p">83<br><span>Bi</span></div>
+    <div class="element p">84<br><span>Po</span></div>
+    <div class="element p">85<br><span>At</span></div>
+    <div class="element p noble">86<br><span>Rn</span></div>
+
+    <!-- Period 7 -->
+    <div class="element s">87<br><span>Fr</span></div>
+    <div class="element s">88<br><span>Ra</span></div>
+    <div class="element f">89-103<br><span>Ac-Lr</span></div>
+    <div class="element d">104<br><span>Rf</span></div>
+    <div class="element d">105<br><span>Db</span></div>
+    <div class="element d">106<br><span>Sg</span></div>
+    <div class="element d">107<br><span>Bh</span></div>
+    <div class="element d">108<br><span>Hs</span></div>
+    <div class="element d">109<br><span>Mt</span></div>
+    <div class="element d">110<br><span>Ds</span></div>
+    <div class="element d">111<br><span>Rg</span></div>
+    <div class="element d">112<br><span>Cn</span></div>
+    <div class="element p">113<br><span>Nh</span></div>
+    <div class="element p">114<br><span>Fl</span></div>
+    <div class="element p">115<br><span>Mc</span></div>
+    <div class="element p">116<br><span>Lv</span></div>
+    <div class="element p">117<br><span>Ts</span></div>
+    <div class="element p noble">118<br><span>Og</span></div>
+
+    <!-- Lanthanides -->
+    <div style="grid-column: 4 / span 15; grid-row: 9;" class="element f">57<br><span>La</span></div>
+    <div class="element f">58<br><span>Ce</span></div>
+    <div class="element f">59<br><span>Pr</span></div>
+    <div class="element f">60<br><span>Nd</span></div>
+    <div class="element f">61<br><span>Pm</span></div>
+    <div class="element f">62<br><span>Sm</span></div>
+    <div class="element f">63<br><span>Eu</span></div>
+    <div class="element f">64<br><span>Gd</span></div>
+    <div class="element f">65<br><span>Tb</span></div>
+    <div class="element f">66<br><span>Dy</span></div>
+    <div class="element f">67<br><span>Ho</span></div>
+    <div class="element f">68<br><span>Er</span></div>
+    <div class="element f">69<br><span>Tm</span></div>
+    <div class="element f">70<br><span>Yb</span></div>
+    <div class="element f">71<br><span>Lu</span></div>
+
+    <!-- Actinides -->
+    <div style="grid-column: 4 / span 15; grid-row: 10;" class="element f">89<br><span>Ac</span></div>
+    <div class="element f">90<br><span>Th</span></div>
+    <div class="element f">91<br><span>Pa</span></div>
+    <div class="element f">92<br><span>U</span></div>
+    <div class="element f">93<br><span>Np</span></div>
+    <div class="element f">94<br><span>Pu</span></div>
+    <div class="element f">95<br><span>Am</span></div>
+    <div class="element f">96<br><span>Cm</span></div>
+    <div class="element f">97<br><span>Bk</span></div>
+    <div class="element f">98<br><span>Cf</span></div>
+    <div class="element f">99<br><span>Es</span></div>
+    <div class="element f">100<br><span>Fm</span></div>
+    <div class="element f">101<br><span>Md</span></div>
+    <div class="element f">102<br><span>No</span></div>
+    <div class="element f">103<br><span>Lr</span></div>
+  </div>
+</body>
+</html>
